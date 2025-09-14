@@ -3,6 +3,12 @@ body {
   text-align: center;
   background: #f0f0f0;
 }
+h2{
+  color: black;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
 h1 {
   color: darkblue;
   font-style: italic;
