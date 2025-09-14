@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: 'Poppins',sans-Serif;
   text-align: center;
   background: #f0f0f0;
 }
@@ -16,6 +16,7 @@ h1 {
   font-size: 32px;    /*tambah ni*/
   margin-top: 30px;   /*tambah ni*/
 }
+
 p {
   color: red;
   font-style: italic;
@@ -23,6 +24,17 @@ p {
 }
 form {
   margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0,1);
+  border-radius: 8px;
+}
+input, button {
+  text-align: center;
 }
 input {
   padding: 10px;
@@ -38,7 +50,16 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition:background-color 0.3s ease;
 }
 button:hover{
   background-color: navy;
+}
+@media (max-width: 400px) {
+  input {
+    width: 90%;
+  }
+  form {
+    width: 80%;
+  }
 }
