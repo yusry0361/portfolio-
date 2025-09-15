@@ -1,115 +1,41 @@
 body {
-  font-family: 'Poppins',sans-Serif;
+  font-family: 'Poppins',Sans-Serif;
   text-align: center;
   background: #f0f0f0;
 }
-header {
-  margin-top: 20px;
-  direction: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-.logo {
-  width: 80px;
-  height: auto;
-}
-h2{
-  color: black;
-  font-size: 18px;
-  margin-top: 20px;
-  font-weight: bold;
-}
-h1 {
-  color: darkblue;
-  font-style: italic;
-  margin: 10px;
-  font-size: 32px;    /*tambah ni*/
-  margin-top: 30px;   /*tambah ni*/
-}
-.profile {
-  margin: 20px auto;
-  text-align: center;
-}
-.prfile-pic {
+.gambar-profil {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0,0,0,0,2);
-}
-h3 {
-  color: darkblue;
-  font-style: italic;
-  font-size: 24px;
-  margin: 10px 0 5px;
-}
-p {
-  color: red;
-  font-style: italic;
-  margin: 10px;
-}
-form {
   margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 20px;
-  background: white;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0,1);
-  border-radius: 8px;
-  animation: slideup 1s ease;
-  animation-fill-mode: forwards;
 }
-input, button {
-  text-align: center;
-}
-input {
-  padding: 10px;
-  width: 200px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border 0.3s ease;
-  }
-ipnut:focus {
-  border: 2px solid orange;
-  outline: none;
-}
-}
-input:placeholder {
-  color: grey;
+h1 {
+  color: yellow;
+  font-size: 32px;
   font-style: italic;
+  margin-top: 20px;
 }
-button {
-  padding: 10px 20px;
-  background-color: darkblue;
+#tentang {
+  margin: 30px auto;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+#tentang h2 {
+  color: black;
+  font-size: 20px;
+}
+.sosial a {
+  margin: 10px;
+  text-decoration: none;
   color: white;
-  border: none;
+  background: darkblue;
+  padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
-  transition:background-color 0.3s ease;
+  display: inline-block;
+  transition: background 0.3s;
 }
-button:hover{
-  background-color: navy;
-  transform: scale(1.05);
-}
-@media (max-width: 480px) {
-  input {
-    width: 90%;
-  }
-  form {
-    width: 90%;
-    padding: 15px;
-  }
-}
-@keyframes slideup {
-  from {
-    opacity: 0;
-    transform: translatey(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translatey(0);
-  }
+.sosial a:hover {
+  background: navy;
 }
