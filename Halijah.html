@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Happy Birthday Siti Halijah</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
-<body>
+<body onload="mulaConfetti()">
   <div class="container">
     <img src="halijah.png" alt="Siti Halijah" class="gambar-profil">
     <h1>🎉 HAPPY BIRTHDAY SITI HALIJAH 🎉</h1>
@@ -13,11 +15,21 @@
       Semoga panjang umur dan dimurahkan rezeki<br>
       Terus bahagia dan berjaya dalam hidup!
     </p>
+    <button onclick="alert('Happy Birthday Awak 🎂')">Hantar Ucapan</button>
   </div>
 
-  <!-- Muzik latar (contoh YouTube embed, boleh ubah link) -->
-  <div class="lagu">
-    <iframe width="0" height="0" src="https://youtu.be/1U0l0665cqs?si=hDwrqoz1AO53SqlX" frameborder="0" allow="autoplay"></iframe>
-  </div>
+  <!-- Lagu latar (optional) -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/TiC8pigA9nI?autoplay=1" frameborder="0" allow="autoplay"></iframe>
+
+  <script>
+    function mulaConfetti() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+  <div class="tesk-bergerak">🎉Selamat Hari Jadi Awak🎉</div>
 </body>
 </html>
